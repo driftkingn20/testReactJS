@@ -21,10 +21,18 @@ class App extends Component {
   render(){
     let {carItems}=this.state
     return(
-      <div>
+      <div className="container">
+      <div className="jumbotron">
+      <div className="row">
+        
+
           <CarInput onAddCar={this.addCar}/>
+
           <CarList items={carItems}/>
+
+        </div>
       </div>
+    </div>
     );
   }
 }

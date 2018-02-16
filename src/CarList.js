@@ -5,11 +5,11 @@ class CarList extends Component{
     render(){
         let {items} = this.props
         return(
-            <div>
-                <ul>
+            <div className="col">
+                <ul className="list-group">
                     {
                         items.map((car,i) => 
-                        <li key={i}>
+                        <li className="list-group-item" key={i}>
                             <CarItem text={car}/>
                         </li>)
                     }

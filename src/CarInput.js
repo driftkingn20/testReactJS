@@ -18,10 +18,12 @@ class CarInput extends Component{
     render(){
         let {newCar} = this.state
         return(
-            <div>
-                <div>Add Car</div>
-                <input value={newCar} onChange={(e)=>this.setState({newCar: e.target.value})}/>
-                <button onClick={this.addClicked}>Add</button>
+            <div className="col">
+                <div className="form-inline">
+                    <span>Add Car</span>
+                    <input className="form-control" value={newCar} onChange={(e)=>this.setState({newCar: e.target.value})}/>
+                    <button className="btn btn-primary" onClick={this.addClicked}>Add</button>
+                </div>
             </div>
         )
     }
